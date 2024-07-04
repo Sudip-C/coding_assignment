@@ -28,11 +28,11 @@ const ProductList: React.FC = () => {
 
 
   return (
-    <div>
-      <h1>Product List</h1>
+    <div className='main-body'>
       <input
+        className='input-field'
         type="text"
-        placeholder="Search products..."
+        placeholder="Search products by name..."
         ref={searchQueryRef}
         onChange={handleSearchChange}
       />
@@ -44,9 +44,9 @@ const ProductList: React.FC = () => {
             </section>
             <section className='detail-box'>
             <h2>{product.title}</h2>
-            <p>{product.price}</p>
-            <p>{product.description}</p>
-            <Link to={`/product/${product.id}`}><button>View Details</button></Link>
+            <p>₹ {product.price}</p>
+            <p>{product.description.slice(0,35)}...</p>
+            <Link to={`/product/${product.id}`}><button className='view-details' >View Details</button></Link>
             </section>
           </article>
         ))}
