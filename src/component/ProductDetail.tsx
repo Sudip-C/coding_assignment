@@ -5,29 +5,12 @@ import { RootState } from '../redux/store';
 import '../css/ProductDetail.css'
 
 const ProductDetail: React.FC = () => {
-  // const { id } = useParams<{ id: string }>();
-  // const product = useSelector((state: RootState) =>
-  //   state.products.items.find((item) => +(item.id) === Number(id))
-  // );
-const product={avatar
-  : 
-  "https://loremflickr.com/640/480/fashion",
-  category
-  : 
-  "Computers",
-  description
-  : 
-  "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
-  id
-  : 
-  "1",
-  price
-  : 
-  "429.00",
-  title
-  : 
-  "Awesome Cotton Sausages"}
-  if (!product) return <div>Product not found</div>;
+  const { id } = useParams<{ id: string }>();
+  const product = useSelector((state: RootState) =>
+    state.products.items.find((item) => +(item.id) === Number(id))
+  );
+
+  if (!product) return <div className='product_not_found'><h1>Product not found...</h1></div>;
 
   return (
     <main className='main' >

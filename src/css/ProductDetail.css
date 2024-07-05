@@ -51,6 +51,10 @@ box-shadow: rgba(0, 0, 0, 0.468) 0px 1px 4px;
 font-size: 35px;
 font-weight: 600;
 }
+.product_not_found{
+    font-size: 45px;
+    font-weight: 700;
+}
 
 @media screen  and (max-width:700px){
     
