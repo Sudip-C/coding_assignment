@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { fetchProducts as fetchProductsAPI } from '../api/productApi';
 
-interface ProductState {
+export interface ProductState {
   items: any[];
   status: 'idle' | 'loading' | 'succeeded' | 'failed';
 }
