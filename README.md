@@ -5,6 +5,7 @@ In the span of two days i created this project. I have used Typscript for avoidi
 It is an fully responsive webapp deployed in netlify.
 I have also added search functionality. User can search any product by its name.
 # Link : https://productts.netlify.app/
+# Demo video : https://drive.google.com/file/d/1shhoU-ygmzWi8COYYF_6i7kI6B-5KNJA/view?usp=sharing
 It has two pages :
 # ProductListing page:
 
