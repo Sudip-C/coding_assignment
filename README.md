@@ -3,6 +3,7 @@
 
 In the span of two days i created this project. I have used Typscript for avoiding any kind of typing mistakes, React and CSS for styling. i have added pagination for better user experience.
 It is an fully responsive webapp deployed in netlify.
+I have also added search functionality. User can search any product by its name.
 # Link : https://productts.netlify.app/
 It has two pages :
 # ProductListing page:
